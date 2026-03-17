@@ -30,16 +30,20 @@ export async function onRequestPost(context) {
         to: email,
         subject: 'Welcome to IndyClaw — Let\'s Talk About Your Business',
         html: `
-          <div style="font-family: -apple-system, sans-serif; max-width: 600px; margin: 0 auto; color: #333;">
+          <div style="font-family: -apple-system, sans-serif; max-width: 600px; margin: 0 auto; color: #333; line-height: 1.6;">
             <h2 style="color: #f97316;">🦀 Welcome to IndyClaw!</h2>
-            <p>Hey there,</p>
-            <p>Thank you for signing up for early access. You're one of the first to explore what AI agents can do for Indianapolis businesses — and we're excited to connect with you.</p>
-            <p>One of our team members will be in touch shortly. In the meantime, we'd love to learn more about you:</p>
-            <p style="background: #f8f8f8; padding: 16px; border-left: 3px solid #f97316; border-radius: 4px;">
-              <strong>Can you tell us a little about your business and what pain points or bold ideas the IndyClaw team can help you solve?</strong>
-            </p>
-            <p>Just hit reply — this goes straight to our team.</p>
-            <p>Talk soon,<br><strong>The IndyClaw Team</strong></p>
+            <p>Hi there,</p>
+            <p>Thank you for signing up — we're thrilled to have you. You're among the first to explore what AI agents can do for Indianapolis businesses, and our team is looking forward to connecting with you.</p>
+            <p>To make the most of your <strong>free discovery call</strong>, it would be great to learn a bit about you beforehand. When you have a moment, just reply to this email with:</p>
+            <ul style="margin: 16px 0; padding-left: 20px;">
+              <li><strong>A brief description of your business</strong> — what you do, who you serve, and how big your team is</li>
+              <li><strong>Any pain points or bold ideas</strong> you'd like our team of AI experts to help you solve</li>
+              <li><strong>Your preferred time</strong> for the discovery call — mornings, afternoons, or a specific day that works best</li>
+              <li><strong>Your preference for the call</strong> — phone call or video call?</li>
+            </ul>
+            <p>No pressure to answer everything right now — even a few sentences helps us prepare a more valuable conversation for you.</p>
+            <p>Just hit reply — this goes directly to our team.</p>
+            <p>We're excited to show you what's possible.<br><br>Warm regards,<br><strong>The IndyClaw Team</strong></p>
             <hr style="border: none; border-top: 1px solid #eee; margin: 24px 0;">
             <p style="font-size: 12px; color: #999;">IndyClaw — AI agents for Indianapolis businesses.<br>Powered by OpenClaw + NVIDIA NemoClaw.</p>
           </div>
