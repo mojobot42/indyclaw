@@ -18,7 +18,7 @@ export async function onRequestPost(context) {
     const timestamp = new Date().toISOString();
     const RESEND_API_KEY = context.env.RESEND_API_KEY;
 
-    // 1. Send welcome email from onboarding@resend.dev
+    // 1. Send welcome email from info@cincyclaw.com (stopgap until indyclaw.ai verified on Resend)
     const emailResponse = await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: {
@@ -26,7 +26,7 @@ export async function onRequestPost(context) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        from: 'IndyClaw <onboarding@resend.dev>',
+        from: 'IndyClaw <info@cincyclaw.com>',
         to: email,
         subject: 'Welcome to IndyClaw — Let\'s Talk About Your Business',
         html: `
@@ -60,7 +60,7 @@ export async function onRequestPost(context) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        from: 'IndyClaw Signups <onboarding@resend.dev>',
+        from: 'IndyClaw Signups <info@cincyclaw.com>',
         to: 'mojobot42@gmail.com',
         subject: `🦀 New IndyClaw Signup: ${email}`,
         html: `<p>New signup at ${timestamp}</p><p><strong>Email:</strong> ${email}</p>`,
