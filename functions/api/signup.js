@@ -48,7 +48,7 @@ export async function onRequestPost(context) {
             <p style="font-size: 12px; color: #999;">IndyClaw — AI agents for Indianapolis businesses.<br>Powered by OpenClaw + NVIDIA NemoClaw.</p>
           </div>
         `,
-        reply_to: 'mojobot42@gmail.com',
+        reply_to: 'info@cincyclaw.com',
       }),
     });
 
